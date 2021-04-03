@@ -12,11 +12,6 @@ const MAX_PLAYLIST_ITEMS = 5;
 class App extends Component {
   constructor(props) {
     super(props);
-    /* this.state = {
-      videoList: ['https://www.youtube.com/watch?v=UvrS8PcBC5A', 'https://www.youtube.com/watch?v=Rf5E2FSFOjU'],
-      titleList: ['TESTING HERE', 'SECOND TEST'],
-      thumbnailList: ['https://w7.pngwing.com/pngs/327/766/png-transparent-old-school-runescape-youtube-elf-random-icons-child-face-hand-thumbnail.png'],
-    }; */
     this.state = {
       videoList: [],
       titleList: [],
@@ -35,8 +30,7 @@ class App extends Component {
     youtube
       .get('https://www.googleapis.com/youtube/v3/search', {
         params: {
-          // keys: 'AIzaSyC-InxCAw2BLHrw2mkE4tFYwjXSMHe_xDY',
-          keys: 'AIzaSyAUkhed1g17GHTqDqFapKi_4hy2Oy4UL_I', // buddhajjigae
+          keys: 'API KEY HERE',
           q: searchTerm,
         },
       })
